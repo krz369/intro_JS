@@ -11,10 +11,12 @@
     <script>
       var pregunta = prompt("¿Eres bellisimo/a?");
 
-      if (pregunta == "si") {
+      if (pregunta == "si" || pregunta =='Si') {
         alert("Ciertamente");
-      } else if (pregunta == "no") alert("No te creo");
+      } else if (pregunta == "no" || pregunta == 'No') 
+        alert("No te creo");
       else alert("No es una respuesta valida, solo si o no");
     </script>
   </body>
 </html>
+
