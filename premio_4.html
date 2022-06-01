@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 4:Solicitar al usuario un número de cliente. Si el número es el 1000, imprimir “Ganaste un premio”, en caso contrario mostrar el número y el mensaje “Lo sentimos, sigue participando”. -->
+    <script>
+      var num = prompt("Ingresa un numero");
+      if (parseInt(num) === 1000) {
+        function ventanaSecundaria(URL) {
+          alert('Ganaste un premio')
+          window.open(
+            URL,
+            "ventana1",
+            "width=270,height=480,scrollbars=NO,left=500px, top=150"
+          );
+        }
+
+        ventanaSecundaria(
+          "https://i.giphy.com/media/42qTxnekKaXizqJdHD/giphy.gif"
+        );
+      } else {
+        function ventanaSecundaria(URL) {
+          alert('Lo sentimos, sigue participando')
+          window.open(
+            URL,
+            "ventana1",
+            "width=480,height=480,scrollbars=NO,left=500px, top=150"
+          );
+        }
+
+        ventanaSecundaria(
+          "https://media0.giphy.com/media/5YiVRiqT3q8VuhF4r3/giphy.gif?cid=790b7611aa44b7c9e8c2f7ceecc9cf9fc116e10e03231fbc&rid=giphy.gif&ct=g"
+        );
+      }
+    </script>
+  </body>
+</html>

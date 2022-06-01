@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 5:Solicitar al usuario que ingrese dos números y mostrar cuál de los dos es menor. No considerar el caso en que ambos números son iguales. -->
+    <script>
+      window.onload = function () { 
+        var valor_1 = prompt("introduce el primer numero ");
+        var valo_2 = prompt("introduce el segundo numero ");
+
+        if (parseInt(valor_1) < parseInt(valor_2)) {
+          document.write("El primer numero  es mas pequeño que el segundo");
+        
+      
+        } else if (parseInt(valor_1) > parseInt(valor_2)) {
+          document.write("El primer numero es mas grande que el segundo");
+        }
+      };
+      // else {
+      //     document.write("Son iguales");
+      //   }
+      // };
+    </script>
+  </body>
+</html>

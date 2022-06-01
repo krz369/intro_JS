@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 6:Solicitar al usuario que ingrese tres números y mostrar cuál de los tres es el número mayor. Considerar el caso en que 2 números sean iguales. -->
+    <script type="text/javascript">
+        var p1 = prompt("Ingrese el primer numero : ");
+        var s2 = prompt("Ingrese el segundo numero : ");
+        var t3 = prompt("Ingrese el tercer numero : ");
+        
+        
+        
+        p1=parseInt(p1);
+        s2=parseInt(s2);
+        t3=parseInt(t3);
+        
+        
+           if (p1 == s2 && p1 == t3){
+           document.write("Todos son iguales!:");
+           } else{
+              if (p1 > s2 && t3){
+                  document.write("El primer numero  es mayor:")
+                 }else{
+                     if(s2 > t3){
+                        document.write("El segundo numero es mayor")
+                     }else{
+                         document.write('El terser numero es mayor')
+                     }
+                 }
+                }
+              
+        </script>
+</body>
+</html>
